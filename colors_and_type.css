@@ -1,0 +1,235 @@
+/* ============================================================
+   سطر — Satar · Design Foundations
+   Colors + Typography tokens
+   Brand Guidelines V.1 · 2026
+   ============================================================ */
+
+/* ---------- Fonts: Lama Sans (Condensed) ---------- */
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-ExtraLightCondensed.ttf") format("truetype");
+  font-weight: 200; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-LightCondensed.ttf") format("truetype");
+  font-weight: 300; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-RegularCondensed.ttf") format("truetype");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-MediumCondensed.ttf") format("truetype");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-SemiBoldCondensed.ttf") format("truetype");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-BoldCondensed.ttf") format("truetype");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-ExtraBoldCondensed.ttf") format("truetype");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Lama Sans";
+  src: url("fonts/LamaSans-BlackCondensed.ttf") format("truetype");
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+
+:root {
+  /* ===========================================================
+     1 · BRAND COLORS  (from Satr Colors.pdf — hex is authoritative)
+     =========================================================== */
+  --satar-purple:  #60269E;  /* البنفسجي الأصيل — innovation, uniqueness, vision  (PRIMARY) */
+  --satar-teal:    #2EC4B6;  /* الفيروزي النابض — vitality, momentum, flexibility (SECONDARY) */
+  --satar-black:   #1A1A1A;  /* الأسود الفاحم — depth, professionalism, focus */
+  --satar-white:   #F9F9F9;  /* الأبيض النقي — purity, simplicity, balance */
+
+  /* ---- Purple ramp (derived via oklch around #60269E) ---- */
+  --purple-50:   #f3edfa;
+  --purple-100:  #e3d3f2;
+  --purple-200:  #c7a8e3;
+  --purple-300:  #a674d1;
+  --purple-400:  #8447bd;
+  --purple-500:  #60269e;  /* brand */
+  --purple-600:  #511f86;
+  --purple-700:  #41196c;
+  --purple-800:  #311351;
+  --purple-900:  #210d37;
+
+  /* ---- Teal ramp (derived around #2EC4B6) ---- */
+  --teal-50:   #e7faf7;
+  --teal-100:  #c2f1ea;
+  --teal-200:  #8fe5da;
+  --teal-300:  #56d6c7;
+  --teal-400:  #2ec4b6;  /* brand */
+  --teal-500:  #1ea99c;
+  --teal-600:  #16887e;
+  --teal-700:  #136b64;
+  --teal-800:  #114f4a;
+  --teal-900:  #0c3531;
+
+  /* ---- Neutral / ink ramp ---- */
+  --ink-0:    #ffffff;
+  --ink-25:   #f9f9f9;  /* brand white */
+  --ink-50:   #f2f2f3;
+  --ink-100:  #e6e6e8;
+  --ink-200:  #cfcfd3;
+  --ink-300:  #aeaeb4;
+  --ink-400:  #84848c;
+  --ink-500:  #5e5e66;
+  --ink-600:  #3f3f45;
+  --ink-700:  #2a2a2e;
+  --ink-800:  #1f1f22;
+  --ink-900:  #1a1a1a;  /* brand black */
+
+  /* ===========================================================
+     2 · SEMANTIC COLOR ROLES
+     =========================================================== */
+  --bg-page:        var(--ink-25);   /* default page surface */
+  --bg-surface:     #ffffff;         /* cards, sheets */
+  --bg-inverse:     var(--ink-900);  /* dark sections */
+  --bg-brand:       var(--satar-purple);
+  --bg-brand-soft:  var(--purple-50);
+  --bg-accent:      var(--satar-teal);
+  --bg-accent-soft: var(--teal-50);
+
+  --fg-1:           var(--ink-900);  /* primary text */
+  --fg-2:           var(--ink-500);  /* secondary text */
+  --fg-3:           var(--ink-400);  /* tertiary / captions */
+  --fg-on-brand:    #ffffff;
+  --fg-on-accent:   var(--ink-900);  /* black sits best on teal */
+  --fg-inverse:     var(--ink-25);
+  --fg-brand:       var(--satar-purple);
+  --fg-accent:      var(--teal-600);
+
+  --border-1:       var(--ink-100);  /* hairlines, dividers */
+  --border-2:       var(--ink-200);  /* default control border */
+  --border-strong:  var(--ink-900);
+  --border-brand:   var(--satar-purple);
+
+  /* States (kept inside the brand palette) */
+  --focus-ring:     color-mix(in oklch, var(--satar-purple) 55%, transparent);
+  --success:        var(--teal-600);
+  --danger:         #d23b3b;
+
+  /* ===========================================================
+     3 · TYPOGRAPHY
+     =========================================================== */
+  --font-sans: "Lama Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  /* Weights — guideline: Bold = main headings, Medium = subheads, Regular = body */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    900;
+
+  /* Type scale (condensed face → tracks tight) */
+  --fs-display: 64px;  --lh-display: 1.02;
+  --fs-h1:      44px;  --lh-h1: 1.06;
+  --fs-h2:      32px;  --lh-h2: 1.12;
+  --fs-h3:      24px;  --lh-h3: 1.2;
+  --fs-h4:      19px;  --lh-h4: 1.3;
+  --fs-lg:      18px;  --lh-lg: 1.5;
+  --fs-body:    16px;  --lh-body: 1.6;
+  --fs-sm:      14px;  --lh-sm: 1.5;
+  --fs-xs:      12px;  --lh-xs: 1.4;
+
+  --tracking-tight: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+
+  /* ===========================================================
+     4 · RADII · SHADOWS · SPACING
+     =========================================================== */
+  --r-xs: 4px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 26px;
+  --r-pill: 999px;
+  /* The brand "معين" (rhombus) — a square rotated 45° — is the signature container. */
+  --rhombus-rotate: 45deg;
+
+  --shadow-sm: 0 1px 2px rgba(26,26,26,.06), 0 1px 1px rgba(26,26,26,.04);
+  --shadow-md: 0 4px 12px rgba(26,26,26,.08), 0 2px 4px rgba(26,26,26,.05);
+  --shadow-lg: 0 12px 32px rgba(26,26,26,.10), 0 4px 8px rgba(26,26,26,.06);
+  --shadow-brand: 0 12px 28px rgba(96,38,158,.22);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --ease: cubic-bezier(.22,.61,.36,1);
+  --ease-out: cubic-bezier(.16,1,.3,1);
+  --dur: 220ms;
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT DEFAULTS  (RTL-first, Arabic primary)
+   ============================================================ */
+.satar {
+  font-family: var(--font-sans);
+  color: var(--fg-1);
+  background: var(--bg-page);
+  direction: rtl;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.satar h1, .satar .h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h1); line-height: var(--lh-h1);
+  letter-spacing: var(--tracking-tight); margin: 0;
+}
+.satar h2, .satar .h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h2); line-height: var(--lh-h2);
+  letter-spacing: var(--tracking-tight); margin: 0;
+}
+.satar h3, .satar .h3 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h3); line-height: var(--lh-h3); margin: 0;
+}
+.satar h4, .satar .h4 {
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-h4); line-height: var(--lh-h4); margin: 0;
+}
+.satar .display {
+  font-weight: var(--fw-black);
+  font-size: var(--fs-display); line-height: var(--lh-display);
+  letter-spacing: var(--tracking-tight); margin: 0;
+}
+.satar p, .satar .body {
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body); line-height: var(--lh-body);
+  color: var(--fg-1); margin: 0; text-wrap: pretty;
+}
+.satar .lead {
+  font-size: var(--fs-lg); line-height: var(--lh-lg);
+  color: var(--fg-2); font-weight: var(--fw-regular);
+}
+.satar small, .satar .caption {
+  font-size: var(--fs-sm); line-height: var(--lh-sm); color: var(--fg-2);
+}
+.satar .overline {
+  font-size: var(--fs-xs); font-weight: var(--fw-semibold);
+  letter-spacing: var(--tracking-wide); color: var(--fg-accent);
+  text-transform: uppercase;
+}

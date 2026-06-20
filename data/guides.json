@@ -1,14 +1,22 @@
-{
-  "guides": [
-    {
-      "slug": "sina3at-almuhtawa-altaalimi",
-      "title": "صناعة المحتوى التعليمي",
-      "description": "كيف تكتب بوست تعليمي يخلي القارئ يحس إنك فاهمه — من ألمه، مو من معرفتك.",
-      "level": "للمبتدئين",
-      "readTime": 12,
-      "posts": 3,
-      "published": true,
-      "publishedAt": "2026-06-15"
-    }
-  ]
-}
+[
+  {
+    "slug": "guide-37d8bc56",
+    "title": "المحتوى التعليمي: سلاحك السري لكسب ثقة أول عميل",
+    "description": "المحتوى التعليمي ما مات، اللي مات هو المحتوى العشوائي اللي ما يخدم أحد. تعال نكتشف كيف تحوّل معرفتك لجسر ثقة يوصلك بعميلك الأول.",
+    "level": "للمبتدئين",
+    "readTime": 7,
+    "posts": 2,
+    "published": true,
+    "publishedAt": "2026-06-20"
+  },
+  {
+    "slug": "sina3at-almuhtawa-altaalimi",
+    "title": "صناعة المحتوى التعليمي",
+    "description": "كيف تكتب بوست تعليمي يخلي القارئ يحس إنك فاهمه — من ألمه، مو من معرفتك.",
+    "level": "للمبتدئين",
+    "readTime": 12,
+    "posts": 3,
+    "published": true,
+    "publishedAt": "2026-06-15"
+  }
+]

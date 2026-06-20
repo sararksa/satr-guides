@@ -28,10 +28,8 @@ img { display: block; max-width: 100%; }
 }
 .container--narrow { max-width: 760px; }
 
-/* Arabic-Indic numerals helper */
 .an { font-feature-settings: normal; }
 
-/* ---------- Rhombus signature element ---------- */
 .rh {
   display: inline-block;
   width: 9px; height: 9px;
@@ -43,7 +41,6 @@ img { display: block; max-width: 100%; }
 .rh--p { background: var(--satar-purple); }
 .rh--k { background: var(--satar-black); }
 
-/* ---------- Buttons ---------- */
 .btn {
   font-family: inherit;
   font-weight: var(--fw-semibold);
@@ -79,9 +76,6 @@ img { display: block; max-width: 100%; }
 }
 .btn--onpurple:hover { background: var(--ink-25); }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
 .nav {
   position: sticky; top: 0; z-index: 50;
   background: rgba(255,255,255,.82);
@@ -110,9 +104,6 @@ img { display: block; max-width: 100%; }
   margin-inline-start: auto; padding: 6px; color: var(--fg-1);
 }
 
-/* ============================================================
-   HERO (3 switchable variants)
-   ============================================================ */
 .hero { background: var(--bg-surface); overflow: hidden; position: relative; }
 .hero-variant { display: none; }
 body[data-hero="a"] .hero-a,
@@ -139,21 +130,18 @@ body[data-hero="c"] .hero-c { display: block; }
   color: var(--fg-2); margin: 0;
 }
 
-/* --- stats --- */
 .stats { display: flex; gap: 0; flex-wrap: wrap; }
 .stat { display: flex; flex-direction: column; gap: 4px; padding-inline-end: 40px; margin-inline-end: 40px; border-inline-end: 1px solid var(--border-1); }
 .stat:last-child { border-inline-end: none; margin-inline-end: 0; padding-inline-end: 0; }
 .stat__num { font-size: 30px; font-weight: var(--fw-black); color: var(--satar-purple); line-height: 1; letter-spacing: var(--tracking-tight); }
 .stat__label { font-size: 14px; color: var(--fg-2); font-weight: var(--fw-medium); }
 
-/* Variant A — centered (Stripe-like) */
 .hero-a .container { padding-block: 96px 84px; text-align: center; display: flex; flex-direction: column; align-items: center; }
 .hero-a .hero-title { font-size: clamp(40px, 6.4vw, 76px); line-height: 1.18; margin-top: 24px; max-width: 14ch; }
 .hero-a .hero-lead { margin-top: 24px; max-width: 56ch; }
 .hero-a .hero-actions { display: flex; gap: 12px; margin-top: 34px; flex-wrap: wrap; justify-content: center; }
 .hero-a .stats { margin-top: 56px; justify-content: center; }
 
-/* Variant B — split with rhombus visual */
 .hero-b .container { padding-block: 80px 88px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
 .hero-b .hero-title { font-size: clamp(38px, 4.6vw, 62px); line-height: 1.1; margin-top: 22px; }
 .hero-b .hero-lead { margin-top: 22px; max-width: 46ch; }
@@ -168,7 +156,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .hero-visual__badge b { font-size: 22px; font-weight: var(--fw-black); color: var(--satar-purple); }
 .hero-visual__badge span { font-size: 13px; color: var(--fg-2); font-weight: var(--fw-medium); }
 
-/* Variant C — editorial */
 .hero-c .container { padding-block: 92px 0; }
 .hero-c .hero-top { max-width: 18ch; }
 .hero-c .hero-title { font-size: clamp(44px, 7vw, 88px); line-height: 1.04; margin-top: 26px; }
@@ -180,9 +167,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .hero-c .statband .sb__num { font-size: 44px; font-weight: var(--fw-black); color: var(--satar-purple); line-height: 1; letter-spacing: var(--tracking-tight); }
 .hero-c .statband .sb__label { font-size: 15px; color: var(--fg-2); margin-top: 8px; font-weight: var(--fw-medium); }
 
-/* ============================================================
-   SECTION HEADERS
-   ============================================================ */
 .section { padding-block: 96px; }
 .section--soft { background: var(--bg-page); }
 .section--dark { background: var(--satar-black); color: #fff; }
@@ -192,9 +176,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .sec-title { font-size: clamp(28px, 3.6vw, 40px); font-weight: var(--fw-black); letter-spacing: var(--tracking-tight); margin: 14px 0 0; line-height: 1.08; }
 .sec-sub { font-size: var(--fs-lg); color: var(--fg-2); margin: 16px 0 0; max-width: 54ch; line-height: 1.6; }
 
-/* ============================================================
-   GUIDE CARDS
-   ============================================================ */
 .guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .guide-card {
   background: var(--bg-surface);
@@ -248,9 +229,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .guide-card__meta .mi svg { width: 15px; height: 15px; stroke: var(--fg-3); }
 .guide-card__meta .read { margin-inline-start: auto; color: var(--satar-purple); font-weight: var(--fw-semibold); display: inline-flex; align-items: center; gap: 5px; }
 
-/* ============================================================
-   ABOUT band
-   ============================================================ */
 .about { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; align-items: center; }
 .about__visual { aspect-ratio: 1; max-width: 280px; position: relative; display: flex; align-items: center; justify-content: center; }
 .about__rh-lg { width: 180px; height: 180px; transform: rotate(45deg); border-radius: var(--r-lg); background: var(--satar-purple); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg); }
@@ -263,9 +241,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .about__points li { display: flex; gap: 12px; align-items: flex-start; font-size: 16px; color: var(--fg-1); line-height: 1.5; }
 .about__points .rh { margin-top: 7px; }
 
-/* ============================================================
-   GUIDE PAGE — hero
-   ============================================================ */
 .ghero { background: var(--bg-surface); border-bottom: 1px solid var(--border-1); position: relative; overflow: hidden; }
 .ghero::before {
   content: ""; position: absolute; inset-inline-start: -90px; top: -90px;
@@ -283,7 +258,7 @@ body[data-hero="c"] .hero-c { display: block; }
 }
 .tag--level { color: var(--purple-600); background: var(--purple-50); }
 .tag--topic { color: var(--teal-700); background: var(--teal-50); }
-.ghero__title { font-size: clamp(36px, 5.4vw, 60px); font-weight: var(--fw-black); letter-spacing: var(--tracking-tight); line-height: 1.05; margin: 22px 0 0; max-width: 18ch; }
+.ghero__title { font-size: clamp(30px, 4.4vw, 48px); font-weight: var(--fw-black); letter-spacing: var(--tracking-tight); line-height: 1.32; margin: 22px 0 0; max-width: 22ch; }
 .ghero__lead { font-size: var(--fs-lg); color: var(--fg-2); line-height: 1.65; margin: 22px 0 0; max-width: 56ch; }
 .ghero__meta { display: flex; gap: 0; flex-wrap: wrap; margin-top: 34px; }
 .ghero__meta .gm { display: flex; align-items: center; gap: 9px; padding-inline-end: 28px; margin-inline-end: 28px; border-inline-end: 1px solid var(--border-1); }
@@ -292,7 +267,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .ghero__meta .gm b { font-size: 16px; font-weight: var(--fw-bold); color: var(--fg-1); display: block; line-height: 1.2; }
 .ghero__meta .gm span { font-size: 13px; color: var(--fg-3); }
 
-/* ---------- Article shell ---------- */
 .article-wrap { padding-block: 56px 88px; }
 .toc {
   background: var(--bg-page); border: 1px solid var(--border-1);
@@ -305,7 +279,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .toc__list a:hover { background: var(--purple-50); color: var(--satar-purple); }
 .toc__list a::before { content: counter(toc, decimal-leading-zero); font-size: 14px; font-weight: var(--fw-bold); color: var(--satar-purple); background: #fff; border: 1px solid var(--border-1); width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex: none; }
 
-/* ---------- Article typography ---------- */
 .article { font-size: 18px; line-height: 1.85; color: var(--ink-700); }
 .article > p { margin: 0 0 22px; text-wrap: pretty; }
 .article .axis { margin-top: 12px; }
@@ -321,7 +294,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .article ul li::before { content: ""; width: 9px; height: 9px; background: var(--satar-teal); transform: rotate(45deg); border-radius: 1px; margin-top: 12px; flex: none; }
 .article .divider { height: 1px; background: var(--border-1); border: none; margin: 8px 0 40px; }
 
-/* ---------- Pull quote ---------- */
 .pullquote {
   position: relative; background: var(--satar-purple); color: #fff;
   border-radius: var(--r-xl); padding: 52px 48px 44px; margin: 44px 0;
@@ -333,7 +305,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .pullquote cite { position: relative; z-index: 1; display: flex; align-items: center; gap: 9px; font-style: normal; font-size: 14px; color: rgba(255,255,255,.7); margin-top: 22px; font-weight: var(--fw-medium); }
 .pullquote cite .rh { background: var(--satar-teal); }
 
-/* ---------- CTA box ---------- */
 .ctabox {
   background: var(--bg-page); border: 1px solid var(--border-1);
   border-radius: var(--r-xl); padding: 48px; text-align: center;
@@ -344,7 +315,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .ctabox p { font-size: var(--fs-lg); color: var(--fg-2); margin: 14px auto 0; max-width: 48ch; line-height: 1.6; }
 .ctabox .btn { margin-top: 28px; }
 
-/* ---------- Author + share ---------- */
 .author {
   display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
   padding-top: 40px; border-top: 1px solid var(--border-1);
@@ -369,9 +339,6 @@ body[data-hero="c"] .hero-c { display: block; }
   .share { margin-inline-start: 0; width: 100%; }
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer { background: var(--satar-black); color: #fff; }
 .footer__inner { max-width: 1120px; margin: 0 auto; padding: 60px 32px 28px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 32px; }
 .footer__logo { height: 26px; width: auto; }
@@ -382,9 +349,6 @@ body[data-hero="c"] .hero-c { display: block; }
 .footer__bar { border-top: 1px solid rgba(255,255,255,.1); padding: 18px 32px; text-align: center; font-size: 13px; color: rgba(255,255,255,.5); display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
 .footer__bar .rh { width: 7px; height: 7px; }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 @media (max-width: 920px) {
   .nav__links { display: none; }
   .nav__cta-text { display: none; }

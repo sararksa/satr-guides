@@ -190,7 +190,7 @@
   fetch('data/guides.json', { cache: 'no-store' })
     .then(function (r) { return r.json(); })
     .then(function (data) {
-      var guides = (data && data.guides) ? data.guides : [];
+      var guides = Array.isArray(data) ? data : (data && data.guides ? data.guides : []);
       render(guides);
       var sg = document.getElementById('stat-guides');
       if (sg) sg.textContent = toArabic(guides.length);

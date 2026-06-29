@@ -378,3 +378,21 @@ body[data-hero="c"] .hero-c { display: block; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+
+/* === تحسينات الجوال: الشعار + زر التليجرام === */
+@media (max-width: 920px) {
+  .nav__cta-text { display: inline !important; }
+}
+@media (max-width: 680px) {
+  .nav__inner { height: 58px !important; padding-inline: 18px !important; gap: 12px !important; }
+  .nav__logo { height: 20px !important; }
+  .nav .btn--primary, header.nav .btn--primary { padding: 8px 14px !important; font-size: 13px !important; gap: 6px !important; }
+  .nav__cta-text { display: inline !important; font-size: 13px !important; }
+  .nav .btn--primary svg, header.nav .btn--primary svg { width: 15px !important; height: 15px !important; }
+}
+@media (max-width: 380px) {
+  .nav__logo { height: 18px !important; }
+  .nav__cta-text { font-size: 12px !important; }
+  .nav__inner { gap: 8px !important; padding-inline: 14px !important; }
+}

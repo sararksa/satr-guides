@@ -199,5 +199,5 @@
 })();
 </script>
 
-</body>
+<script id="guideCounter">(function(){var D="٠١٢٣٤٥٦٧٨٩";function toAr(n){var s=String(n),o="";for(var i=0;i<s.length;i++){var c=s.charCodeAt(i);o+=(c>=48&&c<=57)?D.charAt(c-48):s.charAt(i);}return o;}fetch("data/guides.json").then(function(r){return r.json();}).then(function(data){var arr=(data&&data.length!==undefined)?data:((data&&data.guides)?data.guides:[]);var ar=toAr(arr.length);function upd(root,numSel,labelSel){var els=document.querySelectorAll(root);for(var i=0;i<els.length;i++){var lbl=els[i].querySelector(labelSel);var num=els[i].querySelector(numSel);if(lbl&&num&&lbl.textContent.indexOf("دليل مكتوب")!==-1){num.textContent=ar;}}}upd(".stat",".statnum",".statlabel");upd(".sb",".sbnum",".sblabel");}).catch(function(){});})();</script></body>
 </html>
